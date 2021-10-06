@@ -1,0 +1,6 @@
+{
+    "fp_radius": 3,
+    "fp_bits": 512,
+    "dataset_name": "3_512_x_main",
+    "label_name": "3_512_y_main"
+  }
