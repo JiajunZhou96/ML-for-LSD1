@@ -1,6 +1,6 @@
 # ML-for-LSD1
 
-This repository contains codes and data in *Machine Learning Enabled Virtual Screening For Inhibitors of Lysine-Specific Histone Demethylase*
+This repository contains codes and data in *Machine Learning Enabled Virtual Screening For Inhibitors of Lysine-Specific Histone Demethylase*.
 
 
 
@@ -17,4 +17,4 @@ This repository contains codes and data in *Machine Learning Enabled Virtual Scr
 
 
 ## Dataset for screening
-The screening dataset can be found https://zinc.docking.org/substances/subsets/in-vitro/
+The screening dataset can be found in https://zinc.docking.org/substances/subsets/in-vitro/ . Please add the .csv file to ./ML-for-LSD1/screening_base/in-vitro_zinc/ directory.
