@@ -17,4 +17,4 @@ This repository contains codes and data in *Machine Learning Enabled Virtual Scr
 
 
 ## Dataset for screening
-The screening dataset can be found in https://zinc.docking.org/substances/subsets/in-vitro/ . Please add the `<.csv>` file to `./ML-for-LSD1/screening_base/in-vitro_zinc/` directory.
+The screening dataset can be found in https://zinc.docking.org/substances/subsets/in-vitro/ . Please add the `in-vitro.csv` file to `./ML-for-LSD1/screening_base/in-vitro_zinc/` directory.
