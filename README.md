@@ -19,23 +19,27 @@ This repository contains codes and data in *Machine Learning Enabled Virtual Scr
 ## Dataset for screening
 The screening dataset can be found in https://zinc.docking.org/substances/subsets/in-vitro/ . Please add the `in-vitro.csv` file to `./ML-for-LSD1/screening_base/in-vitro_zinc/` directory.
 
-### Generate machine learning datasets from original pChEMBL dataset.
+
+## Script Description
+
+
+#### Generate machine learning datasets from original pChEMBL dataset.
 `data_cleansing.py` and `dataset_construction.py`
 
-### Hyperparameter Optimization
+#### Hyperparameter Optimization
 `optimization.py`
 
-### Algorithm Fitting
+#### Algorithm Fitting
 `fitting.py`
 
-### Part of Analysis
+#### Part of Analysis
 `plot_learning_curves.py` and `tsne.py`
 
-### Neural Network
+#### Neural Network
 `neural network.py`
 
-### Virtual Screening
+#### Virtual Screening
 `deploy.py` and `deploy2.py`
 
-### Utils
+#### Utils
 `utils.py`, `rdkit_utils.py` and `nn_utils.py`
