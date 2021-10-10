@@ -7,7 +7,7 @@ from sklearn.neighbors import KNeighborsRegressor
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor, AdaBoostRegressor, ExtraTreesRegressor
 from sklearn.linear_model import Lasso, Ridge, LinearRegression, ElasticNet
 
-from utils import fit_result
+from utils import fit_result, get_parameters
 
 np.random.seed(42)
 
