@@ -19,4 +19,4 @@ estimator2 = RandomForestRegressor(bootstrap=False, max_features='sqrt', min_sam
 estimator3 = DecisionTreeRegressor(criterion='friedman_mse', min_samples_split=9)
 
 plot_multi_learning_curves(x_values, y_values, estimator1, estimator2, estimator3,
-                           random_seed = 42, testsize = 0.2, mode = 'rmse', autosave = 'y', interval = None)
+                           random_seed = 42, testsize = 0.2, mode = 'r2', autosave = 'y', interval = None)
