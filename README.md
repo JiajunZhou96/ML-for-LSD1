@@ -23,16 +23,16 @@ The screening dataset can be found in https://zinc.docking.org/substances/subset
 ## Script Description
 
 
-#### Generate machine learning datasets from original pChEMBL dataset.
+#### Generate datasets for algorithms from the original pChEMBL dataset.
 `data_cleansing.py` and `dataset_construction.py`
 
 #### Hyperparameter Optimization
 `optimization.py`
 
-#### Algorithm Fitting
+#### Algorithm Fitting with Best Performing Hyperparameter Combinations
 `fitting.py`
 
-#### Part of Analysis
+#### Some Analysis
 `plot_learning_curves.py` and `tsne.py`
 
 #### Neural Network
