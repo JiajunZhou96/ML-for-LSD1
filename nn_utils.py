@@ -14,7 +14,7 @@ def weight_reset(m):
     if isinstance(m, nn.Conv2d) or isinstance(m, nn.Linear):
         m.reset_parameters()
 
-def result_average_NN(net, x, y, loss, num_epochs, optimizer, testsize = 0.2, random_seeds_start = 2, random_seeds_stop = 62, random_seeds_step = 2):
+def result_average_NN(net, x, y, loss, num_epochs, optimizer, testsize = 0.2, random_seeds_start = 2, random_seeds_stop = 62, random_seeds_step = 2, device = None):
 
     train_scores = []
     test_scores = []
