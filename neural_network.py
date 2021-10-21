@@ -1,4 +1,4 @@
-# Use the script under google colab environment
+# Use the script under google colab/GPU environment
 
 import torch
 import numpy as np
@@ -14,6 +14,8 @@ import matplotlib.pyplot as plt
 import random
 
 from nn_utils import weight_reset, result_average_NN
+
+print('GPU availability:', torch.cuda.is_available())
 
 dataset = pd.read_csv('./datasets/3_512_x_main.csv')
 target = pd.read_csv('./datasets/3_512_y_main.csv')
@@ -46,4 +48,5 @@ net = net.to(device)
 loss_func = loss_func.to(device)
 
 net.apply(weight_reset)
-result_average_NN(net, dataset.values, target.values, loss = loss_func, num_epochs = 10000, optimizer = optimizer, testsize = 0.2, random_seeds_start = 2, random_seeds_stop = 62, random_seeds_step = 2)
+result_average_NN(net, dataset.values, target.values, loss = loss_func, 
+                  num_epochs = 10000, optimizer = optimizer, testsize = 0.2, random_seeds_start = 2, random_seeds_stop = 62, random_seeds_step = 2, device = device)
