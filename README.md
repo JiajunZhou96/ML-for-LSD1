@@ -11,6 +11,8 @@ This repository contains codes and data in *Machine Learning Enabled Virtual Scr
 * RDKit 2020.09.1.0
 * scikit-learn 0.23.2
 * matplotlib 3.3.2
+* torch 1.9.0
+* PyTorch Lightning 1.4.9
 
 
 
