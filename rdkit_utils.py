@@ -12,8 +12,8 @@ def smiles_dataset(dataset_df = None, smiles_loc = 'Smiles', fp_radius = 3, fp_b
 
     '''
     Use this function to generate the dataframe of fingerprint
-    dataset_df: the dataset should be dataframe
-    smiles_loc: the column name that have SMILES string
+    dataset_df: the input dataset should be a dataframe
+    smiles_loc: the column name that consists of SMILES strings
     fp_radius = the radius of Morgan fingerprint
     fp_bits = the number of fingerprint bits of Morgan fingerprint
     '''
