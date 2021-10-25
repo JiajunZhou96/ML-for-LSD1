@@ -22,11 +22,11 @@ def smiles_dataset(dataset_df = None, smiles_loc = 'Smiles', fp_radius = 3, fp_b
     smiles_list = np.array(smiles).tolist()
 
     mols = [Chem.MolFromSmiles(smile) for smile in smiles_list]
-    mols = [Chem.AddHs(smile) for smile in mols]
+    mols = [Chem.AddHs(smile) for smile in mols]. # Note that add Hs would change the fingerprint albeit the same molecule
 
     morgans = [AllChem.GetMorganFingerprintAsBitVect(mol, radius = fp_radius,
                 nBits= fp_bits, useChirality = True) for mol in mols]
-    morgan_bits =  [morgan.ToBitString() for morgan in morgans]
+    morgan_bits =  [morgan.ToBitString() for morgan in morgans] 
 
     pattern = re.compile('.{1}')  # find every single digit
     morgan_bits = [','.join(pattern.findall(morgan)) for morgan in morgan_bits]
