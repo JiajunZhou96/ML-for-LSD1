@@ -30,7 +30,7 @@ de_threshold_7 = threshold_7
 for smile in original_dataset['Smiles']:
     for new_structure in threshold_7['smiles']:
         if smile == new_structure:
-            index = threshold_7[threshold_7['smiles'] == smile].index[0] # 加上[0] 才能将这个从 奇怪的格式转换为 int 数字
+            index = threshold_7[threshold_7['smiles'] == smile].index[0]
             print('overlap found at position: {:01d}'.format(index))
             de_threshold_7 = de_threshold_7.drop(index = index, axis = 0)
         else:
