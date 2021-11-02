@@ -10,7 +10,7 @@ from utils import save_dataset
 dataset_original = pd.read_csv('./datasets/ChEMBL_original_dataset.csv', delimiter=';')
 
 # Take out all values that have pChEMBL values
-dataset_v1 = dataset_original[dataset_original['pChEMBL Value'].notna()]   # 1236, 45
+dataset_v1 = dataset_original[dataset_original['pChEMBL Value'].notna()]
 
 # Check out the duplicates and take their mean values
 dataset_v2 = dataset_v1.groupby('Molecule ChEMBL ID').mean()['Standard Value'].reset_index()
