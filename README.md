@@ -1,6 +1,6 @@
 # ML-for-LSD1
 
-This repository contains codes and data in *Machine Learning Enabled Virtual Screening For Inhibitors of Lysine-Specific Histone Demethylase*.
+This repository contains original codes and data in *Machine-Learning-Enabled Virtual Screening For Inhibitors of Lysine-Specific Histone Demethylase 1*.
 
 
 
