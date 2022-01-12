@@ -41,7 +41,7 @@ def save_dataset(dataframe, path = None, file_name = None, idx = False):
     if path is None:
         path = os.path.join(os.getcwd(), 'datasets')
     else:
-        path = path
+        path = os.path.join(os.getcwd(), path)
     print('Current path is:', path)
 
     if os.path.exists(path) == True:
